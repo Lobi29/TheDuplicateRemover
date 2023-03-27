@@ -1,0 +1,71 @@
+/* create new text form */
+.create {
+    position: relative;
+    max-width: 400px;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.create .formContainer label p {
+    text-align: left;
+    display: block;
+}
+
+.create .formContainer h3 {
+    color: #f1356d;
+    margin-bottom: 30px;
+}
+
+.create .formContainer textarea {
+    width: 100%;
+    height: 20rem;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 1rem;
+    display: block;
+    font-family: cursive;
+    font-size: 1.5rem;
+}
+
+.create .formContainer button {
+    background: #f1356d;
+    color: #fff;
+    border: 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+
+/* custom alert box */
+.show {
+    position: absolute;
+    background: aquamarine; 
+    top: 0;
+    border-radius: 1rem;
+    padding: 2rem;
+    z-index: 999;
+}
+
+.showContainer button {
+    background: #f1356d;
+    color: #fff;
+    border: 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+
+/* common style */
+.hide {
+    display: none;
+}

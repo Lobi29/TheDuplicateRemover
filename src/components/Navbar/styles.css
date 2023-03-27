@@ -1,0 +1,22 @@
+.navbar {
+    height: 15vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.navbar h3 {
+    padding: 1rem;
+    color: white;
+    background-color: #f1356d;
+    border-radius: 1rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar h3:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,121 @@
+section {
+    display: flex;
+    /* flex-direction: column; */
+    margin: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.editContainer {
+    background: linear-gradient(
+        90deg, rgba(46, 44, 45, 1) 0%,
+        rgba(66, 64, 67, 1) 100%
+    );
+    width: 600px;
+    min-height: 40vh;
+    margin: 5rem auto;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.field {
+    width: 600px;
+    min-height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container1 {
+    width: 100%;
+    min-height: 40vh;
+    color: #fff;
+    background: #f1356d;
+    border-radius: 2rem;
+
+    padding: 2rem;
+}
+
+.container1 h3 {
+    text-align: center;
+    background-color: #fff;
+    color: #111;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.container1 p {
+    font-family: cursive;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.container2 {
+    width: 100%;
+    min-height: 40vh;
+    color: #fff;
+    background: #f1356d;
+    border-radius: 2rem;
+
+    padding: 2rem;
+}
+
+.container2 h3 {
+    text-align: center;
+    background-color: #fff;
+    color: #111;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.container2 p {
+    font-family: cursive;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+
+.editContainer .deleteBtn {
+    background: #f1356d;
+    color: #fff;
+    border: 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+/* part2 */
+.showEdit {
+    display: block;
+    background: aquamarine; 
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.showContainer button {
+    background: #f1356d;
+    color: #fff;
+    border: 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+
+/* common style */
+.hide {
+    display: none;
+}
