@@ -19,8 +19,6 @@ const Home = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(body);
-
     // counting the number of blank space
     let count = 0;
     for (let i = 0; i < body.length; i++) {

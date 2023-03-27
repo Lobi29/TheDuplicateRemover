@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './styles.css';
 
 import { useDispatch } from 'react-redux';
@@ -14,26 +14,32 @@ const Card = ({ element }) => {
 
 
     const changeStyle = (e) => {
-        // setTimeout(() => {
-            
-        // }, 1000);
+        
         
         if (condition) {
             setBtnStyle('btn button-clicked');
-            console.log(e.target.innerHTML);
             setCondition(false);
+            
             actions.sendCharacter(e.target.innerHTML);
+            actions.sendIndex(element[1]);
         } else {
             setBtnStyle('btn');
             setCondition(true);
+            
         }
     }
 
+    // setTimeout(() => {
+        
+    // }, 1000);
+    // console.log(element[1]);
 
-
+    // useEffect(() => {}, [])
+    
+    
     return (
         <button className={btnStyle}>
-            <span onClick={(e) => changeStyle(e)}>{ element }</span>
+            <span onClick={(e) => changeStyle(e)}>{ element[0] }</span>
         </button>
     )
 }

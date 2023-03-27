@@ -12,7 +12,7 @@ const Edit = () => {
 
     const char = useSelector(state => state.char);
     const str = useSelector(state => state.str);
-
+    const index = useSelector(state => state.index);
 
     // making an array from the text
     let array = [];
@@ -21,16 +21,38 @@ const Edit = () => {
     }
 
 
+    // making a 2D array
+    // Create one dimensional array
+    var lobi = new Array(2);
+
+
+    // // Loop to create 2D array using 1D array
+    for (var i = 0; i < str.length; i++) {
+        lobi[i] = new Array(2);
+    }
+
+
+    // Loop to initialize 2D array elements.
+    for (var k = 0; k < str.length; k++) {
+        lobi[k][0] = str[k];
+        lobi[k][1] = k;
+    }
 
 
     const editStr = () => {
         let arr = "";
 
+
         for (let i = 0; i < str.length; i++) {
-            if (str[i] !== char) {
+            if (i === index) {
+                arr = arr + str[i];
+            } 
+            else if (str[i] !== char) {
                 arr = arr + str[i];
             }
         }
+
+
         setOutputText(arr);
 
         setPart1('hide');
@@ -44,8 +66,7 @@ const Edit = () => {
                 <div className="editContainer">
                     <div className={part1}>
                         {
-                            array.map((value) => (
-                                // console.log(id, value)
+                            lobi.map((value) => (
                                 <Card key={Math.random()} element={value} />
                             ))
                         }
@@ -55,7 +76,7 @@ const Edit = () => {
                     </div>
                     <div className={part2}>
                         <div className="showContainer">
-                            <h4>Congrats, you just removed all the duplicate appearence of <p style={{display: 'inline', color: 'white', fontSize: '4rem'}}>{char}</p></h4>
+                            <h4>Congrats, you just removed all the duplicate appearence of <p style={{ display: 'inline', color: 'white', fontSize: '4rem' }}>{char}</p></h4>
                             <button>
                                 <Link to="/" style={{ color: 'white' }}>Go Home</Link>
                             </button>
